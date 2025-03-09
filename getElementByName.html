@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <label for="Username" >Username</label>
+    <input type="text" name="Username" placeholder="username" id="username" ><br><br>
+    <label for="password"  >Password</label>
+    <input type="text" name="password" id="password"><br><br>
+    <button onclick="showalert()">Login</button>
+    <script>
+        function showalert(){
+            var username=document.getElementsByName("username")[0].value;
+            var password=document.getElementsByName("password")[0].value;
+  
+
+            alert(" you have Succesifull login:" +username ,+password);
+        }
+
+    </script>
+
+</body>
+</html>
